@@ -2,141 +2,79 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    background-image: linear-gradient( #601D0D ,#20100C);
+  background-image: linear-gradient( #28002deb ,#000000);
+  height: 100vh; /* Define a altura como 100% da viewport height na tela toda */
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o preenchimento padrão */
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    height: 100%;
-    min-height: 100vh;
-
-    min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const Image = styled.img`
+  margin-top: 10px;
+  background:none
 `;
 
-export const Image = styled.img`
-    width: 315px;
-    height: 280px;
+
+export const H1 = styled.h1`
+background:none;
 `;
 
 export const ContainerItens = styled.div`
-    background:linear-gradient(180.00deg,
-        rgba(151, 89, 20,0.6) 0.6%,
-        rgba(151, 89, 20,0.4) 20.6%,
-        rgba(255,255,255,0.01) 56%);
+margin-top: 25px;
+      background:linear-gradient(180.00deg,
+        rgb(66 127 13 / 59%) 1.6%,
+        rgb(21 107 11 / 43%) 17.6%,
+        rgb(13 22 9 / 52%) 63%);
     border-radius: 61px 61px 0px 0px;
 
     padding: 50px 25px;
     display: flex;
     flex-direction: column;
     min-width: 250px;
+  
+  /* Adiciona o estilo ao H1 */
+  & > H1 {
+        background: none; /* Remove o background */
+        text-align: center; /* Centraliza o texto */
+        display:flex;
+        margin: auto; /* Centraliza o texto H1 verticalmente */
+        margin-bottom: 70px;
+    }
 `;
 
-export const H1 = styled.h1`
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    text-align: center;
-    color: #FFFFFF;
 
-    margin-bottom: 30px;
-`;
 
 export const InputLabel = styled.p`
-    font-style: normal;
-    font-size: 14px;
-    /* line-height: 22px; */
-
-    letter-spacing: -0.408px;
-    color: #EEEEEE; 
-    
-    margin: 0px 0px 2px;
+  letter-spacing: -0.408px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #eeeeee;
+  align-self: start;
+  margin-left: 40px;
+  background:none
 `;
 
 export const Input = styled.input`
+  margin-top:5px;
+  width: 342px;
+  height: 58px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  border: none;
+  margin-bottom: 42px;
+  outline: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+  color: #ffffff;
+  padding: 19px;
 
-    padding-left: 20px;
-    width: 250px;    
-    height: 44px;
-
-    background:#dbcdb9;
-    border-color: transparent;
-    border-radius: 4px;
-
-    outline: transparent;
-        
-    ::placeholder{ 
-        color: #363636; 
-    } 
-    
-    margin-bottom: 20px;
-    text-overflow:ellipsis
-`;
-
-export const ButtonRequests = styled.button`
-
-    margin-top: 15px;
-
-    background-color: #AE0000;
-    
-    color: white;
-    width: 180px;
-    height: 50px;
-
-    border: none;
-    
-    border-radius: 4px;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    align-items: center;
-    cursor: pointer;
-
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-self: center;
-
-    &:hover{
-       opacity: 0.8;
-    }
-    &:active{
-        opacity: 0.6;
-    }
-
-`
-
-export const Button = styled.button`
-    background-color: #AE0000;
-    
-    color: white;
-
-    margin-top: 50px;
-
-    width: 250px;
-    height: 53px;
-
-    border: none;
-    
-    border-radius: 4px;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    align-items: center;
-    cursor: pointer;
-
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-
-    &:hover{
-       opacity: 0.8;
-    }
-    &:active{
-        opacity: 0.6;
-    }
+  ::placeholder {
+    color: #c7c7c7;
+  }
 `;

@@ -1,19 +1,19 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import Home from './containers/Home'
-import Requests from './containers/Requests'
+import Home from "./containers/Home"
+import Orders from "./containers/Orders"
 
-function Routes() {
+function MyRoutes (){
 
     return (
-        <Router>
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/pedidos" component={Requests} />
-            </Switch>
-        </Router>
-    )
+      <Router>
+        <Routes>
+          <Route  path="/" element={<Home />} />
+          <Route  path="/order" element={<Orders />} />
+        </Routes>
+      </Router>
+    );
 }
 
-export default Routes;
+export default MyRoutes

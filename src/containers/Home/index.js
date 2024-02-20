@@ -42,7 +42,7 @@ const App = () => {
         <H1>Faça seu pedido!</H1>
 
         <InputLabel>Pedido</InputLabel>
-        <Input ref={inputOrder} placeholder="Ex: 1 Coca-Cola, 1 X-Salada"></Input>
+        <Input ref={inputOrder} placeholder="Seu Pedido. Ex: 1 coca, 1 XBacon"></Input>
 
         <InputLabel>Nome do Cliente</InputLabel>
         <Input ref={inputClientName} placeholder="Digite seu Nome"></Input>

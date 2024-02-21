@@ -23,13 +23,15 @@ const App = () => {
   //const ordersClients = [];
 
   async function addNewOrder() {
+    console.log("Pedido:", inputOrder.current.value); /////
+    console.log("Nome do Cliente:", inputClientName.current.value);////
+
     const { data: newOrder } = await axios.post("http://localhost:3003/order", {
       order: inputOrder.current.value,
+      
       clientName: inputClientName.current.value,
     });
-
     setOrders([...orders, newOrder]);
-
     navigate('/order')
   }
 

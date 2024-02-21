@@ -53,9 +53,9 @@ const Orders = () => {
           {orders.map((orderClient) => (
             <User key={orderClient.id}>
               <Order>
-                <ParagraphOrder>
-                  <p>{orderClient.order}</p>
-                  <p>{orderClient.clientName}</p>
+               <ParagraphOrder>
+                  <p><span className="pedido">Pedido:</span> {orderClient.order}</p>
+                  <p><span className="cliente">Cliente:</span> {orderClient.clientName}</p>
                 </ParagraphOrder>
                 <TrashOrder onClick={() => deleteOrder(orderClient.id)}>
                   <img alt="trashorder" src={Trash} />
@@ -64,7 +64,7 @@ const Orders = () => {
             </User>
           ))}
         </ul>
-          <Button isBack={true} onClick={goBackPage}>Voltar</Button>
+          <Button onClick={goBackPage}>Voltar</Button>
       </ContainerItens>
     </Container>
   );
